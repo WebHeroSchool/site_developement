@@ -5,3 +5,13 @@ p {
 .slider_thesis, .companyName {
     font-family: 'PT Serif', serif;
 }
+
+body {
+
+    border: dashed 1px red;
+    margin: 0;
+   }
+
+.header {
+    width: 68%;
+}
