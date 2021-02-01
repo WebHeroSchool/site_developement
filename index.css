@@ -2,16 +2,44 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.slider_thesis, .companyName {
+.sliderThesis, .companyName {
     font-family: 'PT Serif', serif;
 }
 
 body {
 
-    border: dashed 1px red;
     margin: 0;
    }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
     width: 68%;
+    margin: auto;
+    border: dashed 1px red;
+}
+
+.logo, .menu {
+    
+    border: dashed 1px red;
+
+}
+
+.logo {
+   padding: 40px 0;
+} 
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menuItem {
+    padding: 0 12px;
+}
+
+.menuItem:last-child {
+    padding-right: 0;
 }
