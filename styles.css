@@ -12,6 +12,7 @@ body {
    }
 
 .header {
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -21,17 +22,29 @@ body {
     margin: auto;
     border: dashed 1px red;
 }
-
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
 .logo, .menu {
-    
-    border: dashed 1px red;
+
 
 }
 
 .logo {
    padding: 40px 0;
-} 
-
+   padding-left: 44px;
+   font: 700 24px/32px 'PT serif', arial, Helvetica, sans-serif;
+   width: 190px;
+   height: 35px;
+   //background: url('img/logo.svg');
+   //border: 1px purple solid;
+}
+.logoCircle{
+  width: 28px;
+  height: 28px;
+  border: 1px green dashed;
+}
 .menu{
     display: flex;
     align-items: center;
