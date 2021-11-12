@@ -12,7 +12,6 @@ body {
    }
 
 .header {
-    padding: 40px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -32,19 +31,38 @@ body {
 }
 
 .logo {
+   position: relative;
    padding: 40px 0;
    padding-left: 44px;
    font: 700 24px/32px 'PT serif', arial, Helvetica, sans-serif;
    width: 190px;
    height: 35px;
-   //background: url('img/logo.svg');
-   //border: 1px purple solid;
+   /*background: url('img/logo.svg');*/
+   /*border: 1px purple solid;*/
 }
 .logoCircle{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  border: 1px green dashed;
+  border-radius: 50%;
+  opacity: .7;
 }
+
+.logoDarkBlueCircle{
+    background: #0056EC;
+
+}
+
+.logoBlueCircle{
+    left: 8px;
+    top: 56%;
+    background: #C8DBFB;
+}
+
+
 .menu{
     display: flex;
     align-items: center;
