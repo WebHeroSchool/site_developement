@@ -2,8 +2,29 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sliderThesis, .companyName {
-    font-family: 'PT Serif', serif;
+.slider{
+    padding-right: 50%;
+    background: url(img/slider_img.svg) no-repeat center right;
+}
+
+
+.sliderThesis {
+    font: 700 50px/66px 'PT Serif', arial, Helvetica, sans-serif;
+
+}
+
+.sliderDescription{
+    font: 700 18px/21px Roboto, arial, Helvetica, sans-serif;
+}
+
+.sliderButton{
+    font: 500 14px/16px Roboto, arial, Helvetica, sans-serif;
+    color: white;
+    background: #0056EC;
+    border-radius: 4px;
+    width: 209px;
+    height: 44px;
+    
 }
 
 body {
@@ -19,16 +40,8 @@ body {
 .wrapper {
     width: 68%;
     margin: auto;
-    border: dashed 1px red;
 }
-.slider {
-    display: flex;
-    justify-content: space-between;
-}
-.logo, .menu {
 
-
-}
 
 .logo {
    position: relative;
@@ -37,8 +50,6 @@ body {
    font: 700 24px/32px 'PT serif', arial, Helvetica, sans-serif;
    width: 190px;
    height: 35px;
-   /*background: url('img/logo.svg');*/
-   /*border: 1px purple solid;*/
 }
 .logoCircle{
   position: absolute;
@@ -68,9 +79,43 @@ body {
     align-items: center;
 }
 .menuItem {
-    padding: 0 12px;
+    position: relative;
+    margin-right: 24px;
+    text-decoration: none;
+    font: 700 14px/16px Roboto, arial, helvetica, sans-serif;
+    color: #000;
+    transition: opacity .5s;
 }
 
 .menuItem:last-child {
-    padding-right: 0;
+    margin-right: 0;
+}
+
+.menuItemActive::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #0056EC;
+    opacity: 0;
+    transition: opacity .5s;   
+}
+
+.menuItem:hover{
+    opacity: .5;
+}
+
+.menuItem:hover::after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #0056EC;
+    opacity: .5;
+}
+
+.menuItemActive::after{
+    opacity: 1;
 }
