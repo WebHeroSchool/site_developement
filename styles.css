@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    width: 1920px;
    }
 
 .header {
@@ -9,7 +10,8 @@ body {
 
 .wrapper {
     margin-left: 195px;
-    width: 1487px;
+    margin-right: 200px;
+   
 }
 
 .logo {
@@ -50,13 +52,13 @@ body {
     /* display: flex;
     align-items: center; */
     padding-top: 47px;
-    margin-left: 100px;
+    /* margin-left: 956px; */
 }
 
 .menu_item {
     display:inline-block;
     position: relative;
-    margin-right: 26px;
+    margin-right: 19px;
     text-decoration: none;
     font: bold 18px/21px Roboto, arial, helvetica, sans-serif;
     color: #000;
@@ -97,31 +99,38 @@ body {
 }
 
 .slider{
-    margin-bottom: 100px;
-    padding-right: 60%;
-    background: url(img/slider_img.svg) no-repeat right;
+    margin-bottom: 60px;
+    margin-top: 120px;
+    padding-right: 65%;
+    padding-bottom: 200px;
+    background: top right no-repeat url(img/slider_img.svg);
+    background-size: 50%;
 }
 
 
 .slider_thesis {
-    font: 700 66px/87px 'PT Serif', arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
+    font: 700 66px/87.5px 'PT Serif', arial, Helvetica, sans-serif;
+    margin: 70px 0 37px 0;
+    padding-top: 80px;
 
 }
 
 .slider_description{
-    font: 700 22px/26px Roboto, arial, Helvetica, sans-serif;
-    margin-bottom: 41px;
+    font: 400 22px/26px Roboto, arial, Helvetica, sans-serif;
+    margin: 0 0 41px 0;
 }
 
 .slider_button{
-    font: 700 14px/16px Roboto, arial, Helvetica, sans-serif;
+    font: 700 18px/21px Roboto, arial, Helvetica, sans-serif;
     color: white;
     background: #0056EC;
     border-radius: 4px;
-    padding: 18px 21px;
+    /* padding: 18px 21px; */
     text-decoration: none;
     transition: opacity .5s;
+    width: 271px;
+    height: 57px;
+    border: none;
 }
 
 .slider_button:hover{
@@ -130,4 +139,10 @@ body {
 
 .highlighted{
     background: #ECF3FF;
+}
+
+.dots{
+    /* display: block;
+    margin: auto; */
+    text-align: center;
 }
